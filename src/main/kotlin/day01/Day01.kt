@@ -12,15 +12,20 @@ class Day01:Solver {
             val change = if (l.first() == 'R') { 1 } else { -1 }
             val n = l.drop(1).toInt()
             prevDial = dial
-            dial = ((dial+100) + (change * n)) % 100
-            if(!partTwo && dial == 0) {
-                counter++
+            dial = (dial + change * n).mod(100)
+            if(!partTwo) {
+                if(dial == 0) counter++
             } else {
                 val wholeLaps = n/100
-                val newDial = prevDial + change*n
+                val rest = n % 100
                 counter += wholeLaps
-                if(prevDial != 0 && prevDial != 100 && (newDial <= 0 || newDial >= 100)) {
+                val newDial = prevDial + change * rest
+                if(dial == 0) {
                     counter++
+                } else if (prevDial != 0) {
+                    if(newDial !in 0..100) {
+                        counter++
+                    }
                 }
 
 

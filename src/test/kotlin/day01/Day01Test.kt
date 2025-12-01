@@ -19,7 +19,7 @@ L55
 L1
 L99
 R14
-L82""".split("\n")
+L82""".split("\n"), false
         )
 
         assertEquals("3", result)
