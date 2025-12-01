@@ -1,0 +1,42 @@
+	dial: 82
+newDial -18
+
+counter 1
+	dial: 52
+newDial 52
+
+counter 1
+dial: 0
+newDial 100
+
+counter 2
+	dial: 95
+newDial -5
+
+counter 2
+	dial: 55
+newDial 155
+
+counter 3
+dial: 0
+
+newDial 0
+
+counter 4
+	dial: 99
+newDial -1
+
+counter 4
+dial: 0
+
+newDial 0
+
+counter 5
+	dial: 14
+newDial 14
+
+counter 5
+	dial: 32
+newDial -68
+
+counter 6

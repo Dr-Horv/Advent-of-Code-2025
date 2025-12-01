@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="day01.Day01Test" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-12-01T06:47:42" hostname="fedora" time="0.029">
+  <properties/>
+  <testcase name="part2()" classname="day01.Day01Test" time="0.029"/>
+  <system-out><![CDATA[dial: 82
+newDial -18
+counter 1
+dial: 52
+newDial 52
+counter 1
+dial: 0
+newDial 100
+counter 2
+dial: 95
+newDial -5
+counter 2
+dial: 55
+newDial 155
+counter 3
+dial: 0
+newDial 0
+counter 4
+dial: 99
+newDial -1
+counter 4
+dial: 0
+newDial 0
+counter 5
+dial: 14
+newDial 14
+counter 5
+dial: 32
+newDial -68
+counter 6
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
