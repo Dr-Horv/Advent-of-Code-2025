@@ -1,9 +1,9 @@
 package se.horv
 
 import se.horv.day01.Day01
-/*
+
 import se.horv.day02.Day02
-import se.horv.day03.Day03
+/*import se.horv.day03.Day03
 import se.horv.day04.Day04
 import se.horv.day05.Day05
 import se.horv.day06.Day06
@@ -33,8 +33,8 @@ import kotlin.time.ExperimentalTime
 import kotlin.time.measureTime
 
 enum class Day {
-    Day01,/*
-    Day02,
+    Day01,
+    Day02,/*
     Day03,
     Day04,
     Day05,
@@ -62,11 +62,11 @@ enum class Day {
 
 @OptIn(ExperimentalTime::class)
 fun main(vararg args: String) {
-    val day = Day.Day01
+    val day = Day.Day02
     val daySolver: Solver = when(day) {
         Day.Day01 -> Day01()
-    /*
         Day.Day02 -> Day02()
+        /*
         Day.Day03 -> Day03()
         Day.Day04 -> Day04()
         Day.Day05 -> Day05()
