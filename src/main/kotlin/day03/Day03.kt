@@ -48,11 +48,4 @@ class Day03:Solver {
         return Pair(max, remaining.drop(index+1))
 
     }
-
-    private fun findLargestJoltage2(batteries: List<Int>, partTwo: Boolean): Int {
-        val largest = batteries.dropLast(1).max()
-        val secondLargest = batteries.dropWhile { it != largest }.drop(1).max()
-        return "${largest}${secondLargest}".toInt()
-    }
-
 }
