@@ -17,4 +17,15 @@ data class Coordinate(val x: Int, val y: Int) {
 
     fun manhattanDistance(other: Coordinate): Int = abs(x - other.x) + abs(y - other.y)
     fun difference(other: Coordinate): Pair<Int, Int> = Pair(other.x - x, other.y - y)
+
+    fun adjacent(): Collection<Coordinate> = listOf(
+        Coordinate(x - 1, y),
+        Coordinate(x - 1, y - 1),
+        Coordinate(x - 1, y + 1),
+        Coordinate(x + 1, y),
+        Coordinate(x + 1, y - 1),
+        Coordinate(x + 1, y + 1),
+        Coordinate(x, y - 1),
+        Coordinate(x, y + 1),
+    )
 }
