@@ -8,8 +8,8 @@ import se.horv.day04.Day04
 import se.horv.day05.Day05
 import se.horv.day06.Day06
 import se.horv.day07.Day07
-/*import se.horv.day08.Day08
-import se.horv.day09.Day09
+import se.horv.day08.Day08
+/*import se.horv.day09.Day09
 import se.horv.day10.Day10
 import se.horv.day11.Day11
 import se.horv.day12.Day12
@@ -39,8 +39,8 @@ enum class Day {
     Day04,
     Day05,
     Day06,
-    Day07,/*
-    Day08,
+    Day07,
+    Day08,/*
     Day09,
     Day10,
     Day11,
@@ -62,7 +62,7 @@ enum class Day {
 
 @OptIn(ExperimentalTime::class)
 fun main(vararg args: String) {
-    val day = Day.Day07
+    val day = Day.Day08
     val daySolver: Solver = when(day) {
         Day.Day01 -> Day01()
         Day.Day02 -> Day02()
@@ -70,8 +70,8 @@ fun main(vararg args: String) {
         Day.Day04 -> Day04()
         Day.Day05 -> Day05()
         Day.Day06 -> Day06()
-        Day.Day07 -> Day07()/*
-        Day.Day08 -> Day08()
+        Day.Day07 -> Day07()
+        Day.Day08 -> Day08()/*
         Day.Day09 -> Day09()
         Day.Day10 -> Day10()
         Day.Day11 -> Day11()
