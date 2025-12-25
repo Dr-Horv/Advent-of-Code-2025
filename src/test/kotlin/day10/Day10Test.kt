@@ -26,6 +26,6 @@ class Day10Test {
 [.###.#] (0,1,2,3,4) (0,3,4) (0,1,2,4,5) (1,2) {10,11,11,5,10,5}""".split("\n"), true
         )
 
-        assertEquals("", result)
+        assertEquals("33", result)
     }
 }
