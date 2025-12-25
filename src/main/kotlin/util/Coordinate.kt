@@ -1,6 +1,8 @@
 package se.horv.util
 
 import kotlin.math.abs
+import kotlin.math.pow
+import kotlin.math.sqrt
 
 data class Coordinate(val x: Int, val y: Int) {
     override fun toString(): String = "($x, $y)"
@@ -17,6 +19,9 @@ data class Coordinate(val x: Int, val y: Int) {
 
     fun manhattanDistance(other: Coordinate): Int = abs(x - other.x) + abs(y - other.y)
     fun difference(other: Coordinate): Pair<Int, Int> = Pair(other.x - x, other.y - y)
+    fun distance(other: Coordinate): Double = sqrt(
+            (x - other.x).toDouble().pow(2) + (y - other.y).toDouble().pow(2)
+        )
 
     fun adjacent(): Collection<Coordinate> = listOf(
         Coordinate(x - 1, y),
