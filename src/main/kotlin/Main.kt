@@ -1,7 +1,6 @@
 package se.horv
 
 import se.horv.day01.Day01
-
 import se.horv.day02.Day02
 import se.horv.day03.Day03
 import se.horv.day04.Day04
@@ -10,22 +9,10 @@ import se.horv.day06.Day06
 import se.horv.day07.Day07
 import se.horv.day08.Day08
 import se.horv.day09.Day09
-/*import se.horv.day10.Day10
+import se.horv.day10.Day10
 import se.horv.day11.Day11
 import se.horv.day12.Day12
-import se.horv.day13.Day13
-import se.horv.day14.Day14
-import se.horv.day15.Day15
-import se.horv.day16.Day16
-import se.horv.day17.Day17
-import se.horv.day18.Day18
-import se.horv.day19.Day19
-import se.horv.day20.Day20
-import se.horv.day21.Day21
-import se.horv.day22.Day22
-import se.horv.day23.Day23
-import se.horv.day24.Day24
-import se.horv.day25.Day25*/
+
 import se.horv.util.Solver
 import java.io.File
 import kotlin.time.DurationUnit
@@ -41,28 +28,15 @@ enum class Day {
     Day06,
     Day07,
     Day08,
-    Day09,/*
+    Day09,
     Day10,
     Day11,
-    Day12,
-    Day13,
-    Day14,
-    Day15,
-    Day16,
-    Day17,
-    Day18,
-    Day19,
-    Day20,
-    Day21,
-    Day22,
-    Day23,
-    Day24,
-    Day25,*/
+    Day12
 }
 
 @OptIn(ExperimentalTime::class)
 fun main(vararg args: String) {
-    val day = Day.Day09
+    val day = Day.Day12
     val daySolver: Solver = when(day) {
         Day.Day01 -> Day01()
         Day.Day02 -> Day02()
@@ -72,23 +46,10 @@ fun main(vararg args: String) {
         Day.Day06 -> Day06()
         Day.Day07 -> Day07()
         Day.Day08 -> Day08()
-        Day.Day09 -> Day09()/*
+        Day.Day09 -> Day09()
         Day.Day10 -> Day10()
         Day.Day11 -> Day11()
         Day.Day12 -> Day12()
-        Day.Day13 -> Day13()
-        Day.Day14 -> Day14()
-        Day.Day15 -> Day15()
-        Day.Day16 -> Day16()
-        Day.Day17 -> Day17()
-        Day.Day18 -> Day18()
-        Day.Day19 -> Day19()
-        Day.Day20 -> Day20()
-        Day.Day21 -> Day21()
-        Day.Day22 -> Day22()
-        Day.Day23 -> Day23()
-        Day.Day24 -> Day24()
-        Day.Day25 -> Day25()*/
     }
     val filePath = "src/main/kotlin/${day.toString().lowercase()}/input.txt"
     val lines = File(filePath).readLines()
